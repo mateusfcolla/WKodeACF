@@ -1,0 +1,143 @@
+.wkode-btn {
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.3s;
+  @apply overflow-hidden text-2xl font-bold px-32 py-4 border-4 uppercase;
+  &--outline {
+    &-red {
+      @apply bg-transparent text-wk-primary-red border-wk-primary-red;
+      background-image: linear-gradient(0, #d72818, #d72818);
+      background-repeat: no-repeat;
+      background-size: 0;
+      cursor: pointer;
+      display: inline-block;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover {
+        background-size: 100%;
+        color: white;
+      }
+    }
+    &-blue {
+      @apply bg-transparent text-wk-primary-blue border-wk-primary-blue;
+      background-image: linear-gradient(0, #14151b, #14151b);
+      background-repeat: no-repeat;
+      background-size: 0;
+      cursor: pointer;
+      display: inline-block;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover {
+        background-size: 100%;
+        color: white;
+      }
+    }
+    &-gray {
+      @apply bg-transparent text-wk-primary-lightgray border-wk-primary-lightgray;
+      background-image: linear-gradient(0, #616161, #616161);
+      background-repeat: no-repeat;
+      background-size: 0;
+      cursor: pointer;
+      display: inline-block;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover {
+        background-size: 100%;
+        color: white;
+      }
+    }
+    &-blue {
+      @apply bg-transparent text-wk-secondary-blue border-wk-secondary-blue;
+      background-image: linear-gradient(0, #266a9c, #266a9c);
+      background-repeat: no-repeat;
+      background-size: 0;
+      cursor: pointer;
+      display: inline-block;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover {
+        background-size: 100%;
+        color: white;
+      }
+    }
+    &-yellow {
+      @apply bg-transparent text-wk-secondary-yellow border-wk-secondary-yellow;
+      background-image: linear-gradient(0, #f1b806, #f1b806);
+      background-repeat: no-repeat;
+      background-size: 0;
+      cursor: pointer;
+      display: inline-block;
+      text-transform: uppercase;
+      transition: 0.3s;
+      &:hover {
+        background-size: 100%;
+        color: white;
+      }
+    }
+  }
+  &--solid {
+    &-blue {
+      @apply hover:bg-transparent hover:text-wk-primary-blue bg-wk-primary-blue text-white border-wk-primary-blue;
+    }
+    &-secondary-blue {
+      display: block;
+      @apply hover:bg-transparent hover:text-wk-secondary-blue bg-wk-secondary-blue text-white border-wk-secondary-blue;
+    }
+    &-red {
+      @apply hover:bg-transparent hover:text-wk-primary-red bg-wk-primary-red text-white border-wk-primary-red;
+    }
+    &-white {
+      &-blue {
+        @apply hover:bg-wk-primary-blue hover:text-white bg-white text-wk-primary-blue border-white hover:border-wk-primary-blue;
+      }
+      &-red {
+        @apply hover:bg-wk-primary-red hover:text-white bg-white text-wk-primary-red border-white hover:border-wk-primary-red;
+      }
+    }
+    &-main-red {
+      color: white;
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+
+      margin: auto;
+      padding-bottom: 1.5rem !important;
+      padding-left: 2.25rem !important;
+      padding-right: 2.25rem !important;
+      padding-top: 1.5rem !important;
+      position: relative;
+      text-transform: uppercase;
+      transition: all 0.5s;
+      &::after {
+        background-color: inherit;
+        border-radius: inherit;
+        content: "";
+        display: inline-block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.4s;
+        width: 100%;
+        z-index: -1;
+      }
+      &:hover {
+        box-shadow: 0px 47px 46px 10px rgb(0 0 0 / 71%);
+        transform: translateY(-4px);
+        &::after {
+          opacity: 0;
+          transform: scaleX(1.4) scaleY(1.6);
+        }
+      }
+      @apply flex items-center justify-center bg-wk-primary-red rounded-full text-center;
+    }
+  }
+}
+/* 
+wkode-btn wkode-btn--outline-blue
+wkode-btn wkode-btn--outline-red
+wkode-btn wkode-btn--solid-blue
+wkode-btn wkode-btn--solid-red
+wkode-btn wkode-btn--solid-white-blue
+wkode-btn wkode-btn--solid-white-red
+*/

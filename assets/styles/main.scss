@@ -1,0 +1,21 @@
+@use "base/tailwind";
+@use "base/fonts";
+@use "base/base-styles";
+@use "base/animations";
+
+@use "blocks/new-bikes-block";
+@use "blocks/slider";
+@use "blocks/contact-form";
+@use "blocks/wkode-gallery";
+@use "blocks/wkode-icons";
+
+@use "components/header";
+@use "components/btn";
+@use "components/quartos-carousel";
+@use "components/footer";
+@use "components/testimonial";
+
+@use "pages/main-blocks";
+
+/* @import "../slick/slick-theme.scss"; */
+@import "../slick/slick.scss";

@@ -1,0 +1,167 @@
+.wkode-contact-block {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::after {
+    background-color: rgba(0, 0, 20, 0.658);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+  }
+  &__wrapper {
+    position: relative;
+    z-index: 10;
+  }
+  input {
+    border-radius: 6px !important;
+    margin: auto !important;
+    padding-left: 2.1rem !important;
+    width: 50% !important;
+    &#wpforms-244-field_4_1 {
+      width: 100%;
+    }
+  }
+  .wpforms-field.wpforms-field-checkbox {
+    ul#wpforms-244-field_4 {
+      li.choice-1 {
+        color: white !important;
+        margin: auto !important;
+        padding-left: 2.1rem !important;
+        width: 50% !important;
+        input {
+          margin-right: 3rem !important;
+          width: auto !important;
+        }
+      }
+    }
+  }
+  textarea.wpforms-field-medium {
+    border-radius: 6px !important;
+    margin: auto !important;
+    padding-left: 2.1rem !important;
+    width: 50% !important;
+  }
+  .g-recaptcha div {
+    margin: auto !important;
+  }
+  .wpforms-submit-container {
+    display: flex;
+    justify-content: center;
+    button.wpforms-submit {
+      &#wpforms-submit-244 {
+        font-size: 1.4rem !important;
+      }
+      background-color: #266a9c !important;
+      border: 0 !important;
+      border-radius: 6px;
+      color: white !important;
+      font-size: 1.4rem;
+      font-weight: bold;
+      letter-spacing: 0.3rem;
+      margin: auto !important;
+      margin: auto;
+      margin-bottom: 0.9rem;
+      padding-bottom: 1.5rem;
+      padding-left: 2.25rem;
+      padding-right: 2.25rem;
+      padding-top: 1.5rem;
+      position: relative;
+      text-transform: uppercase;
+      transition: all 0.5s;
+      width: 50%;
+      width: 50%;
+      &::after {
+        background-color: inherit;
+        border-radius: inherit;
+        content: "";
+        display: inline-block;
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.4s;
+        width: 100%;
+        z-index: -1;
+      }
+      &:hover {
+        box-shadow: 0px 47px 46px 10px rgb(0 0 0 / 71%);
+        transform: translateY(-4px);
+        &::after {
+          opacity: 0;
+          transform: scaleX(1.4) scaleY(1.6);
+        }
+      }
+      @apply flex items-center justify-center text-center;
+    }
+  }
+  .wpforms-field-phone {
+    .iti.iti--allow-dropdown {
+      .iti__flag-container {
+        left: 29% !important;
+        margin: auto !important;
+        transform: translateX(-50%) !important;
+        width: 7% !important;
+        z-index: 9999 !important;
+      }
+      input.wpforms-field-medium.wpforms-smart-phone-field.wpforms-input-temp-name {
+        padding-left: 6rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .wkode-contact-block {
+    input {
+      max-width: none !important;
+      width: 80% !important;
+    }
+    textarea.wpforms-field-medium {
+      max-width: none !important;
+      width: 80% !important;
+    }
+    button.wpforms-submit {
+      width: 80% !important;
+    }
+    .wpforms-field-phone {
+      .iti.iti--allow-dropdown {
+        .iti__flag-container {
+          left: 16% !important;
+          width: 10% !important;
+        }
+      }
+    }
+    .wpforms-field.wpforms-field-checkbox {
+      ul#wpforms-244-field_4 {
+        li.choice-1 {
+          color: white !important;
+          margin: auto !important;
+          padding-left: 2.1rem !important;
+          width: 80% !important;
+          input {
+            margin-right: 3rem !important;
+            width: auto !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 464px) {
+  .wkode-contact-block {
+    .wpforms-field-phone {
+      .iti.iti--allow-dropdown {
+        .iti__flag-container {
+          left: 19% !important;
+          width: 18% !important;
+        }
+      }
+    }
+  }
+}
