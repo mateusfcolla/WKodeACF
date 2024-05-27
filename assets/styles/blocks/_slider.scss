@@ -1,6 +1,7 @@
 .wkode-slider {
   display: flex;
-  max-height: 80rem;
+  max-height: 90rem;
+  width: 100%;
   transition: transform 0.5s ease;
 
   /*  */
@@ -8,7 +9,7 @@
   &-container {
     align-items: center;
     display: flex;
-    max-height: 80rem;
+    max-height: 90rem;
     overflow: hidden;
     position: relative;
     width: 100%;
@@ -24,13 +25,14 @@
     display: flex;
     flex: 1 0 auto;
     justify-content: center;
-    max-height: 80rem;
+    max-height: 90rem;
     max-width: calc(100vw - 1rem);
     width: 100%;
-    img {
+
+    & img {
       height: 100%;
-      object-fit: cover;
       width: 100%;
+      object-fit: cover;
     }
   }
 

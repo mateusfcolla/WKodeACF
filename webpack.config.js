@@ -19,7 +19,7 @@ module.exports = [
       //filename: "./dist/[name].min.[fullhash].js",
       path: path.resolve(__dirname),
       assetModuleFilename: "img/[name][ext]",
-      publicPath: "/wp-content/themes/WKode-theme-pvm/",
+      publicPath: "/wp-content/themes/WKodeACF/",
     },
     module: {
       rules: [

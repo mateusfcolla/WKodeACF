@@ -30,7 +30,7 @@ if ( ! function_exists( 'wkode_theme_setup' ) ) :
 		 * Specify Image Sizes
 		 */
 
-		add_image_size( 'slider', 1910, 800, true, array( 'center', 'center' ) );
+		add_image_size( 'slider', 1633, 919, true, array( 'center', 'center' ) );
 		add_image_size( 'slider_mobile', 1080, 1080, true, array( 'center', 'center' ) );
 		
 		add_image_size( 'fancy_image', 1920, 1500, true, array( 'center', 'center' ) );

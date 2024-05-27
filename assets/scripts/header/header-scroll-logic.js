@@ -1,6 +1,6 @@
 let prevScrollPos = window.scrollY;
 const body = document.querySelector("body");
-const threshold = 300; // Adjust this value as needed
+const threshold = 100; // Adjust this value as needed
 
 const headerDesktop = document.querySelector("header.wkode-header--desktop");
 const headerMobile = document.querySelector("header.wkode-header--mobile");

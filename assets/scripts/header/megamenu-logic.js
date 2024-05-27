@@ -1,16 +1,27 @@
 window.addEventListener("load", () => {
-  let h_menu = document.querySelector("#wkode-header__megamenu-btn");
-  let menu = document.querySelector(
+  const h_menu = document.querySelector("#wkode-header__megamenu-btn");
+  const menu = document.querySelector(
     ".wkode-header--mobile .wkode-header__nav--bottom"
   );
-  let mobile_header = document.querySelector("header.wkode-header--mobile");
-  let body = document.querySelector("body");
+  const mobile_header = document.querySelector("header.wkode-header--mobile");
+  const body = document.querySelector("body");
+  const mobile_header_close = document.getElementById('wkode-header-close');
+
+  const toggleHeader = () => {
+    menu.classList.toggle("wkode-header__nav--active");
+    body.classList.toggle("body-megamenu-active");
+  };
 
   h_menu.addEventListener("click", (event) => {
     event.preventDefault();
 
-    menu.classList.toggle("wkode-header__nav--active");
-    body.classList.toggle("body-megamenu-active");
+    toggleHeader();
+  });
+
+  mobile_header_close.addEventListener("click", (event) => {
+    event.preventDefault();
+
+    toggleHeader();
   });
 
   document.addEventListener("click", (event) => {
@@ -18,8 +29,7 @@ window.addEventListener("load", () => {
       !mobile_header.contains(event.target) &&
       body.classList.contains("body-megamenu-active")
     ) {
-      menu.classList.toggle("wkode-header__nav--active");
-      body.classList.toggle("body-megamenu-active");
+      toggleHeader();
     }
   });
 
