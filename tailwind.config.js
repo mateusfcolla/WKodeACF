@@ -15,11 +15,14 @@ module.exports = {
           primary: {
             white: "#D6D6D6",
             red: "#a0242d",
+            darkred: "#78010b",
+            outred: "#66383e",
+            gray: "#4e4e4e",
+            lightgray: "#616161",
+            darkgray: "#1a1a1a",
             lightblue: "#3a9fe9",
             yellow: "#f3db1e",
             blue: "#14151B",
-            gray: "#E7E7E7",
-            lightgray: "#616161",
           },
           secondary: {
             blue: "#266a9c",
@@ -28,10 +31,8 @@ module.exports = {
         },
       },
       fontFamily: {
-        '"poppins"': ["Poppins", "sans-serif"],
+        montserrat: ["Montserrat", "sans-serif"],
         "josefin-sans": ["Josefin Sans", "sans-serif"],
-        montserrat: ["montserrat", "sans-serif"],
-        "dancing-script": ["Dancing Script", "cursive"],
         rubik: [`"Rubik"`, `"sans-serif"`],
         rem: [`"REM"`, `"sans-serif"`],
       },

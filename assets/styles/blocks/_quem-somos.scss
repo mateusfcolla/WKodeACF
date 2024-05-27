@@ -1,0 +1,13 @@
+.wkode-secao-info {
+    @apply md:px-20;
+
+    &-image-container {
+        @apply flex justify-center items-center;
+
+        img {
+            width: 60rem;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
