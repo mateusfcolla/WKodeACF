@@ -1,24 +1,17 @@
-<div class="bg-wk-primary-darkgray wkode-main-container">
+<div class="wkode-main-container" style="background-image: url(<?php echo get_theme_file_uri('/assets/img/MainBackground.png') ?>);">
 
-<section class="wkode-quem-somo py-48" id="quem-somos">
+<section class="wkode-quem-somos py-48" id="quem-somos">
     <div class="container">
         <h1 class="text-7xl text-center font-bold text-white mb-20" data-entrance="grow">Sobre a ATF 6000 Pro</h1>
-        <p class="text-2xl md:text-4xl text-center font-normal text-white mb-20 md:px-48 leading-normal">
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-        iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-        facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-        augue duis dolore te feugait nulla facilisi.
-        Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincid-
-        unt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt
-        ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci
-        tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum
-        iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
-        facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit
-        augue duis dolore te feugait nulla facilisi.
+        <p class="text-2xl md:text-4xl text-center font-normal text-white mb-20 md:px-48 leading-normal whitespace-pre-line">
+            Com a mesma excelência e qualidade de sua antecessora, a nova GTS 2.0 chega ao
+            mercado com um design moderno e disponível em cinco cores vibrantes para embelezar
+            e deixar sua oficina mais atual, além de facilitar o dia a dia aumentando a produtividade e
+            agilidade no atendimento de seus clientes.
+
+            Disponível nas cores azul royal, vermelha, verde bandeira, dourado e prata.
+
+            Confira as nossas condições e garanta a sua!
         </p>
     </div>
 </section>
@@ -33,19 +26,37 @@
             <div class="flex flex-col gap-16">
                 <div class="flex flex-col items-center md:items-start md:flex-row gap-2">
                     <img src="<?php echo get_theme_file_uri('/assets/img/svg/logo-icon.svg'); ?>" class="w-24 mr-6" alt="ACF Icon">
-                    <p class="text-2xl md:text-5xl text-center md:text-left font-regular text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p class="text-2xl md:text-5xl text-center md:text-left font-regular text-white">Com a mesma excelência e qualidade de sua antecessora, a nova GTS 2.0 chega ao
+            mercado com um design moderno e disponível em cinco cores vibrantes para embelezar</p>
                 </div>
                 <div class="flex flex-col items-center md:items-start md:flex-row gap-2">
                     <img src="<?php echo get_theme_file_uri('/assets/img/svg/logo-icon.svg'); ?>" class="w-24 mr-6" alt="ACF Icon">
-                    <p class="text-2xl md:text-5xl text-center md:text-left font-regular text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p class="text-2xl md:text-5xl text-center md:text-left font-regular text-white">e deixar sua oficina mais atual, além de facilitar o dia a dia aumentando a produtividade e
+            agilidade no atendimento de seus clientes.</p>
                 </div>
                 <div class="flex flex-col items-center md:items-start md:flex-row gap-2">
                     <img src="<?php echo get_theme_file_uri('/assets/img/svg/logo-icon.svg'); ?>" class="w-24 mr-6" alt="ACF Icon">
-                    <p class="text-2xl md:text-5xl text-center md:text-left font-regular text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                    <p class="text-2xl md:text-5xl text-center md:text-left font-regular text-white">Disponível nas cores azul royal, vermelha, verde bandeira, dourado e prata.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+<section class="wkode-instagram-embed py-48" id="instagram-embed">
+    <div class="container">
+        <h1 class="text-7xl text-center font-bold text-white mb-20" data-entrance="grow">Siga a ATF 6000 Pro</h1>
+            <?php echo do_shortcode('[insta-gallery id="0"]'); ?>
+    </div>
+</section>
+
+<?php
+    get_template_part('./template-parts/blocks/wkode-testimonial');
+?>
+
 </div>
+
+<?php
+
+    get_template_part('./template-parts/blocks/wkode-contact');
+?>

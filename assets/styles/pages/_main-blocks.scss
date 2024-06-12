@@ -107,6 +107,13 @@
   }
 }
 
+.wkode-main-container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
 @media (max-width: 1000px) {
   .wkode-single-new-bikes-template__form {
     border-radius: 12px;

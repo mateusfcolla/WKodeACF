@@ -14,8 +14,8 @@
       display: block;
     }
 
-    .nav.navbar-nav ul {
-      display: flex;
+    .nav.navbar-nav ul, ul.nav.navbar-nav {
+      display: flex!important;
       justify-content: space-between;
       align-items: center;
       gap: 3rem;

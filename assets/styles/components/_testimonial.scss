@@ -6,7 +6,7 @@
 }
 
 .testimonial-section {
-  padding: 0 0px;
+  background: #9d0518;
 }
 
 .testimonial-wrapper {
@@ -30,12 +30,17 @@
   flex-direction: column;
   justify-content: space-between;
   min-height: 43rem;
+
   .google-logo {
-    width: 2.4rem;
+    padding: .6rem;
+    background: white;
+    border-radius: 100%;
+    width: 2.8rem;
   }
 
   &-image {
     margin-top: 0;
+    border-radius: 100%;
   }
   &-text {
     height: 100%;

@@ -7,8 +7,8 @@ $(".wkode-quartos__slider").slick({
   infinite: false,
   speed: 500,
   arrows: true,
-  prevArrow: `<button class="arrow-button left-arrow" style="background-image: url('../../wp-content/themes/WKode-theme-pvm/assets/img/svg/new-carrousel-left.svg')"></button>`,
-  nextArrow: `<button class="arrow-button right-arrow" style="background-image: url('../../wp-content/themes/WKode-theme-pvm/assets/img/svg/new-carrousel-right.svg')"></button>`,
+  prevArrow: `<button class="arrow-button left-arrow" style="background-image: url('../../wp-content/themes/WKodeACF/assets/img/svg/new-carrousel-left.svg')"></button>`,
+  nextArrow: `<button class="arrow-button right-arrow" style="background-image: url('../../wp-content/themes/WKodeACF/assets/img/svg/new-carrousel-right.svg')"></button>`,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [
@@ -45,8 +45,8 @@ $(".testimonial-wrapper-wrapper").slick({
   infinite: true,
   speed: 500,
   arrows: true,
-  prevArrow: `<button class="arrow-button left-arrow" style="background-image: url('../../wp-content/themes/WKode-theme-pvm/assets/img/svg/new-carrousel-left.svg')"></button>`,
-  nextArrow: `<button class="arrow-button right-arrow" style="background-image: url('../../wp-content/themes/WKode-theme-pvm/assets/img/svg/new-carrousel-right.svg')"></button>`,
+  prevArrow: `<button class="arrow-button left-arrow" style="background-image: url('../../wp-content/themes/WKodeACF/assets/img/svg/new-carrousel-left.svg')"></button>`,
+  nextArrow: `<button class="arrow-button right-arrow" style="background-image: url('../../wp-content/themes/WKodeACF/assets/img/svg/new-carrousel-right.svg')"></button>`,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [

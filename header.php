@@ -4,7 +4,7 @@
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <? wp_head(); ?>
+    <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?> >
@@ -16,7 +16,7 @@
 					</a>
 				</div>
         <div class="wkode-header__nav wkode-header__nav--bottom" id="navbarNavAltMarkup">
-          <?php 
+          <?php
             wp_nav_menu(
               array(
                 'theme_location'    => 'main_menu',
